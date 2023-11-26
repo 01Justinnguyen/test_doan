@@ -4,8 +4,8 @@
 
 # Cách tải project về máy
 
-> - git clone url_here
+> - step 1: git clone url_here
 
-> - npm i
+> - step 2: npm i
 
-> - npm run dev
+> - step: 3 npm run dev
