@@ -1,34 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import Button from '@mui/material/Button'
+import AccessAlarmIcon from '@mui/icons-material/AccessAlarm'
+import ThreeDRotation from '@mui/icons-material/ThreeDRotation'
+import HomeIcon from '@mui/icons-material/Home'
+import Stack from '@mui/material/Stack'
+import { pink } from '@mui/material/colors'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
+    <div>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <AccessAlarmIcon />
+        <br />
+        <ThreeDRotation />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <div>Anh yêu em nhiều lắm</div>
+      <Button variant="contained">Hello world</Button>
+      <Stack direction="row" spacing={0}>
+        <HomeIcon />
+        <HomeIcon color="primary" />
+        <HomeIcon color="secondary" />
+        <HomeIcon color="success" />
+        <HomeIcon color="action" />
+        <HomeIcon color="disabled" />
+        <HomeIcon sx={{ color: pink[100] }} />
+      </Stack>
+    </div>
   )
 }
 
