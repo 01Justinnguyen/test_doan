@@ -5,6 +5,7 @@ import ThreeDRotation from '@mui/icons-material/ThreeDRotation'
 import HomeIcon from '@mui/icons-material/Home'
 import Stack from '@mui/material/Stack'
 import { pink } from '@mui/material/colors'
+import Typography from '@mui/material/Typography'
 
 const App = () => {
   return (
@@ -25,6 +26,10 @@ const App = () => {
         <HomeIcon color="disabled" />
         <HomeIcon sx={{ color: pink[100] }} />
       </Stack>
+
+      <Typography variant="h4" color="text.secondary">
+        Anh yêu em nhiều lắm
+      </Typography>
     </div>
   )
 }
