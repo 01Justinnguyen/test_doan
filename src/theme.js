@@ -14,11 +14,14 @@ const theme = extendTheme({
       }
     },
     dark: {
-      palette: {
-        // primary: {
-        //   main: '#000'
-        // }
-      }
+      // palette: {
+      //   primary: {
+      //     main: '#007fff'
+      //   },
+      //   secondary: {
+      //     main: '#90969e'
+      //   }
+      // }
     }
   }
 })

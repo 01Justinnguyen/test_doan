@@ -7,23 +7,24 @@ import Stack from '@mui/material/Stack'
 import { pink } from '@mui/material/colors'
 import Typography from '@mui/material/Typography'
 import { useColorScheme } from '@mui/material/styles'
+import SelectMode from './components/select-mode/SelectMode'
 
-function ModeToggle() {
-  const { mode, setMode } = useColorScheme()
-  return (
-    <Button
-      onClick={() => {
-        setMode(mode === 'light' ? 'dark' : 'light')
-      }}>
-      {mode === 'light' ? 'Turn dark' : 'Turn light'}
-    </Button>
-  )
-}
+// function ModeToggle() {
+
+//   return (
+//     <Button
+//       onClick={() => {
+//         setMode(mode === 'light' ? 'dark' : 'light')
+//       }}>
+//       {mode === 'light' ? 'Turn dark' : 'Turn light'}
+//     </Button>
+//   )
+// }
 
 const App = () => {
   return (
     <div>
-      <ModeToggle />
+      <SelectMode />
       <hr />
       <div>
         <AccessAlarmIcon />
