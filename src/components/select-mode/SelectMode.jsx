@@ -17,8 +17,8 @@ export default function SelectMode() {
 
   return (
     <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
-      <InputLabel id="label-select-dark-light-mode">Age</InputLabel>
-      <Select labelId="label-select-dark-light-mode" id="select-dark-light-mode" value={mode} label="Age" onChange={handleChange}>
+      <InputLabel id="label-select-dark-light-mode">Mode</InputLabel>
+      <Select labelId="label-select-dark-light-mode" id="select-dark-light-mode" value={mode} label="Mode" onChange={handleChange}>
         <MenuItem value="light">
           <Box className="flex items-center gap-x-2">
             <LightModeIcon fontSize="small" />
@@ -26,7 +26,7 @@ export default function SelectMode() {
           </Box>
         </MenuItem>
         <MenuItem value="system">
-          <Box className="flex items-center gap-x-2">
+          <Box sx={{ gap: 1 }} className="flex items-center">
             <SettingsBrightnessIcon fontSize="small" />
             System
           </Box>
