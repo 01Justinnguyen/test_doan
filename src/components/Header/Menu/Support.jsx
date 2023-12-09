@@ -2,7 +2,7 @@ import ArticleIcon from '@mui/icons-material/Article'
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload'
 import ContentCopyIcon from '@mui/icons-material/ContentCopy'
 import ForumIcon from '@mui/icons-material/Forum'
-import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone'
+import HelpOutlineIcon from '@mui/icons-material/HelpOutline'
 import SchoolIcon from '@mui/icons-material/School'
 import SupportIcon from '@mui/icons-material/Support'
 import TextSnippetIcon from '@mui/icons-material/TextSnippet'
@@ -16,7 +16,6 @@ import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
 import Tooltip from '@mui/material/Tooltip'
 import Typography from '@mui/material/Typography'
-import HelpOutlineIcon from '@mui/icons-material/HelpOutline'
 import * as React from 'react'
 const Support = () => {
   const [anchorEl, setAnchorEl] = React.useState(null)
@@ -31,7 +30,6 @@ const Support = () => {
     <>
       <Tooltip title="Support">
         <IconButton sx={{ padding: 0 }} id="basic-button-profile" aria-controls={open ? 'basic-menu-profile' : undefined} popup="true" aria-expanded={open ? 'true' : undefined} onClick={handleClick}>
-          {/* <Avatar alt="LiamDev" sx={{ width: 34, height: 34 }} src="https://avatars.githubusercontent.com/u/87435674?v=4" /> */}
           <Badge sx={{ cursor: 'pointer' }} color="secondary" variant="dot">
             <HelpOutlineIcon sx={{ cursor: 'pointer' }} />
           </Badge>
@@ -48,20 +46,6 @@ const Support = () => {
         MenuListProps={{
           labelled: 'basic-button-profile'
         }}>
-        {/* <MenuItem onClick={handleClose}>
-          <Avatar sx={{ width: '28px', height: '28px', mr: 2 }} />
-          <Box
-            sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'start'
-            }}>
-            <Typography variant="span">Phúc Nguyễn</Typography>
-            <Typography fontSize={'14px'} variant="span">
-              phuc01112002@gmail.com
-            </Typography>
-          </Box>
-        </MenuItem> */}
         <Box sx={{ padding: '6px 16px' }}>
           <Typography variant="h6" fontSize={14}>
             Support ID
@@ -74,12 +58,6 @@ const Support = () => {
           </Typography>
         </Box>
         <Divider />
-        {/* <MenuItem onClick={handleClose}>
-          <ListItemIcon>
-            <PersonAdd fontSize="small" />
-          </ListItemIcon>
-          Add another account
-        </MenuItem> */}
         <Box>
           <Typography sx={{ padding: '6px 16px' }} variant="h6" fontSize={14}>
             Help
@@ -139,15 +117,6 @@ const Support = () => {
             Download
           </MenuItem>
         </Box>
-        {/* <Divider />
-        <Box>
-          <MenuItem onClick={handleClose}>
-            <ListItemIcon>
-              <Logout fontSize="small" />
-            </ListItemIcon>
-            Logout
-          </MenuItem>
-        </Box> */}
       </Menu>
     </>
   )

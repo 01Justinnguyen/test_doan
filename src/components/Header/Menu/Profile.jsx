@@ -49,17 +49,7 @@ const Profile = () => {
             </Typography>
           </Box>
         </MenuItem>
-        {/* <MenuItem onClick={handleClose}>
-          <Avatar sx={{ width: '28px', height: '28px', mr: 2 }} />
-          My account
-        </MenuItem> */}
         <Divider />
-        {/* <MenuItem onClick={handleClose}>
-          <ListItemIcon>
-            <PersonAdd fontSize="small" />
-          </ListItemIcon>
-          Add another account
-        </MenuItem> */}
         <MenuItem onClick={handleClose}>
           <ListItemIcon>
             <Settings fontSize="small" />
