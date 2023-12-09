@@ -7,7 +7,6 @@ import SchoolIcon from '@mui/icons-material/School'
 import SupportIcon from '@mui/icons-material/Support'
 import TextSnippetIcon from '@mui/icons-material/TextSnippet'
 import YouTubeIcon from '@mui/icons-material/YouTube'
-import Badge from '@mui/material/Badge'
 import Box from '@mui/material/Box'
 import Divider from '@mui/material/Divider'
 import IconButton from '@mui/material/IconButton'
@@ -30,9 +29,7 @@ const Support = () => {
     <>
       <Tooltip title="Support">
         <IconButton sx={{ padding: 0 }} id="basic-button-profile" aria-controls={open ? 'basic-menu-profile' : undefined} popup="true" aria-expanded={open ? 'true' : undefined} onClick={handleClick}>
-          <Badge sx={{ cursor: 'pointer' }} color="secondary" variant="dot">
-            <HelpOutlineIcon sx={{ cursor: 'pointer' }} />
-          </Badge>
+          <HelpOutlineIcon sx={{ cursor: 'pointer' }} />
         </IconButton>
       </Tooltip>
       <Menu

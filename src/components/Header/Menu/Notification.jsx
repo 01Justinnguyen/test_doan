@@ -14,6 +14,7 @@ import Select from '@mui/material/Select'
 import Tooltip from '@mui/material/Tooltip'
 import Typography from '@mui/material/Typography'
 import * as React from 'react'
+import Badge from '@mui/material/Badge'
 
 const Notification = () => {
   const [anchorEl, setAnchorEl] = React.useState(null)
@@ -51,7 +52,9 @@ const Notification = () => {
           popup="true"
           aria-expanded={open ? 'true' : undefined}
           onClick={handleClick}>
-          <NotificationsNoneIcon />
+          <Badge sx={{ cursor: 'pointer' }} color="secondary" variant="dot">
+            <NotificationsNoneIcon />
+          </Badge>
         </IconButton>
       </Tooltip>
       <Menu
