@@ -29,7 +29,7 @@ const Support = () => {
     <>
       <Tooltip title="Support">
         <IconButton sx={{ padding: 0 }} id="basic-button-profile" aria-controls={open ? 'basic-menu-profile' : undefined} popup="true" aria-expanded={open ? 'true' : undefined} onClick={handleClick}>
-          <HelpOutlineIcon sx={{ cursor: 'pointer' }} />
+          <HelpOutlineIcon sx={{ color: 'primary.main' }} />
         </IconButton>
       </Tooltip>
       <Menu

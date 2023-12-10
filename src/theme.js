@@ -7,17 +7,56 @@ const theme = extendTheme({
     headerHeight: '54px'
   },
   colorSchemes: {
-    light: {
-      palette: {
-        primary: teal,
-        secondary: deepOrange
+    // light: {
+    //   palette: {
+    //     primary: teal,
+    //     secondary: deepOrange
+    //   }
+    //   // spacing: (factor) => `${0.25 * factor}rem`
+    // },
+    // dark: {
+    //   palette: {
+    //     primary: cyan,
+    //     secondary: orange
+    //   }
+    // }
+  },
+  components: {
+    // Name of the component
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: 'none'
+        }
       }
-      // spacing: (factor) => `${0.25 * factor}rem`
     },
-    dark: {
-      palette: {
-        primary: cyan,
-        secondary: orange
+    MuiInputLabel: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          color: theme.palette.primary.main
+        })
+      }
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          color: theme.palette.primary.main,
+          fontSize: '0.875rem',
+          '.MuiOutlinedInput-notchedOutline': {
+            borderColor: theme.palette.primary.light
+          },
+          '&:hover': {
+            '.MuiOutlinedInput-notchedOutline': {
+              borderColor: theme.palette.primary.main
+            }
+          },
+          '& fieldset': {
+            borderWidth: '1px !important'
+          },
+          '.MuiSelect-icon': {
+            color: theme.palette.primary.main
+          }
+        })
       }
     }
   }
