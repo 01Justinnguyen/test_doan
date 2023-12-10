@@ -53,7 +53,7 @@ const Notification = () => {
           aria-expanded={open ? 'true' : undefined}
           onClick={handleClick}>
           <Badge sx={{ cursor: 'pointer' }} color="secondary" variant="dot">
-            <NotificationsNoneIcon />
+            <NotificationsNoneIcon sx={{ color: 'primary.main' }} />
           </Badge>
         </IconButton>
       </Tooltip>
